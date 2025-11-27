@@ -1,0 +1,115 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: #1a1a1a;
+}
+
+#badge {
+  position: absolute;
+  top: 15px;
+  left: 60px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  z-index: 99;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+#badge:hover {
+  transform: scale(1.05);
+}
+
+#measurementPanel {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px;
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  z-index: 99;
+  color: #fff;
+  min-width: 200px;
+  display: none;
+}
+
+#measurementPanel h4 {
+  margin: 0 0 10px 0;
+  color: #00d4ff;
+  font-size: 14px;
+}
+
+#measurementPanel p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #e0e0e0;
+}
+
+.measurement-btn {
+  padding: 8px 15px;
+  margin: 5px;
+  background: rgba(0, 212, 255, 0.2);
+  border: 1px solid #00d4ff;
+  border-radius: 5px;
+  color: #00d4ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.measurement-btn:hover {
+  background: rgba(0, 212, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.measurement-btn.active {
+  background: #00d4ff;
+  color: #1a1a1a;
+}
+
+#toolbox {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 99;
+}
+
+.tool-btn {
+  padding: 12px;
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #00d4ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.tool-btn:hover {
+  background: rgba(0, 212, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+}
+
+.tool-btn.active {
+  background: #00d4ff;
+  color: #1a1a1a;
+}
